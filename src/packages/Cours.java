@@ -1,4 +1,3 @@
-import java.util.Date;
 package packages;
 
 //classe Cours
