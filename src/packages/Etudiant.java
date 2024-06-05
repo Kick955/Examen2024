@@ -1,9 +1,13 @@
 package packages;
 
+import java.util.Date;
+
 class Etudiant extends Individu {
-    public Etudiant(String Nom, String Prenom, int Identifiant) {
+    private Date dateInscription;
+
+	public Etudiant(String Nom, String Prenom, int Identifiant) {
 		super(Nom, Prenom, Identifiant);
-		
+    }
 	    public Date getDateInscription() {
 	        return dateInscription;
 	    }
@@ -13,11 +17,11 @@ class Etudiant extends Individu {
 	    }
 
 	    public String getNiveauEtude() {
-	        return niveauEtude;
+	        return NiveauEtude;
 	    }
 
 	    public void setNiveauEtude(String niveauEtude) {
-	        this.niveauEtude = niveauEtude;
+	        this.NiveauEtude = niveauEtude;
 	    }
 	   
 	    // Methode qui affiche les informations du cours
